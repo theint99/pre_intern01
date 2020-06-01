@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <style>
+            .container{
+                width: 100%;
+               
+            }
+            .header1{
+                background-color: gray;
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 15%;
+            }
+            .toplink{
+                float: right;
+                padding-top: 10px;
+            }
+            .link{
+                padding-right: 50px;
+            }
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            a:hover{
+                color: lightgray;
+            }
+            .header2{
+                position: absolute;
+                background-color:whitesmoke ;
+                width: 91%;
+                height: 20%;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                padding-left: 100px;
+            }
+
+            .navbar{
+                position: absolute;
+                background-color: black;
+                width: 100%;
+                display: block;
+                left: 0;
+                top: 150px;
+        
+            }
+            .navcontainer{
+                box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+                height: 30px;
+               
+            }
+            .navcontainer ul{
+                list-style: none;
+                padding-left: 20px;
+            }
+            .navcontainer li{
+                list-style: none;
+               padding-left: 10px;
+               float: left;
+               font-size: smaller;
+            }
+          
+            .backgroundimage{
+                background: url(uni.jpg);
+                position: absolute;
+               left: 0;
+               top: 195px;
+               opacity: 0.5;
+               width: 100%;
+                height: 80%;
+                background-repeat: no-repeat;
+                background-size: 1350px ;
+                display: flex;
+            }
+            .body{
+                width: 100%;
+            }
+            .text {
+                position: absolute;
+                top: 200px;
+                margin-top: 20px;
+                margin-left: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    background: rgba(26, 21, 21, 0.2);
+    width: 800px;
+    height: 250px;
+    box-shadow: 10px 5px 5px rgba(15, 12, 12, 0.5);
+    
+}
+            .left{
+                position: absolute;
+                top: 1;
+                padding-left: 30px;
+                display: flex;
+            }
+            .right{
+                position: absolute;
+                margin-top: 50px;
+               
+                margin-left: 300px;
+            }
+            .btn{
+                background-color: orange;
+                color: white;
+                width: 80px;
+                height: 30px;
+                margin-left: 200px;
+                font-size: x-small;
+            }
+            
+            .cards{
+            position: absolute;
+            top: 600px;
+            
+            
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-auto-rows:auto;
+            grid-gap:3px;
+            
+            
+        }
+        .card{
+            border: 1px solid gainsboro;
+            border-radius: 4px;
+            padding: 5px;
+            text-align: justify;
+            margin-left: 30px;
+            width: 280px;
+        }
+        .message{
+            position: absolute;
+            display: flex;
+            top: 900px;
+            margin-left: 30px;
+        }
+        .message2{
+            position: absolute;
+            width: 500px;
+            margin-left: 400px;
+            text-align: justify;
+        }
+        .event{
+            position: absolute;
+            top: 300px;
+            
+            width: 275%;
+            font-size: x-large;
+        }
+        .eventimg{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 10px;
+            display: flex;
+            padding-right: 30px;
+            
+        }
+        .btn2{
+            margin-top: 200px;
+            margin-left: 630px;
+        }
+        .welcome{
+            position: absolute;
+
+        }
+        .scimg {
+    margin-top: 1700px;
+    padding-top:3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+    background-size: 1400px 500px;
+    height: 120px;
+    background-image: url(uni.jpg);
+    background-repeat: no-repeat;
+}
+.transcon {
+    display: flex;
+    padding-right: 5%;
+    font-size: 20px;
+    font-weight: 30px;
+    color: black;
+    
+}
+.trans1 {
+   
+    border: 1px solid blue;
+    border-radius: 4px;
+    width: 30%;
+    height: 100px;
+    
+    margin-right: 3%;
+    transition: transform .2s;
+    
+}
+.trans2 {
+    width: 30%;
+    height: 100px;
+    border: 1px solid blue;
+   
+    margin-right: 3%;
+    transition: transform .2s;
+}
+.trans3 {
+    width: 30%;
+    height: 100px;
+    border: 1px solid blue;
+    
+    margin-right: 3%;
+    transition: transform .2s;
+}
+.trans1:hover, .trans2:hover, .trans3:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.fontstyle{
+    text-align: center;
+    color: white;
+    font-size: medium;
+}
+.update{
+width: 100%;
+
+padding-left: 20px;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    padding-right: 2%;
+    transition: transform .2s;
+}
+figcaption{
+    font-size: small;
+    color: orange;
+    text-align: center;
+    border: 1px solid gainsboro;
+    
+    width: 100%; 
+}
+.footer{
+    width: 100%;
+    background-color: black;
+}
+.footcontainer{
+    display: flex;
+    padding-left: 80px;
+}
+.col1 {
+    width: 35%;
+    padding-right: 5%;
+    line-height: 30px;
+    color: white;
+    
+}
+.col2 {
+    width: 20%;
+    color: white;
+    line-height: 20px;
+}
+.col3 {
+    width: 20%;
+    color: white;
+    padding-left: 40px;
+}
+.recent {
+    line-height: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.rowimg2 {
+    display: flex;
+    padding-right: 20px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.rowimg1 {
+    display: flex;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.evt2 {
+    padding-right: 10px;
+
+}
+.evt1 {
+    padding-right: 10px;
+}
+.evt21 {
+    line-height: 10px;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="containter">
+            <div class="header1">
+                <div class="toplink">
+                    <div class="link">
+                        <a href="#">Alumini</a>&nbsp;&nbsp;|
+                        <a href="#">Library</a>&nbsp;&nbsp;|
+                        <a href="#">Sign in</a>&nbsp;&nbsp;|
+                        <a href="#">Register</a>&nbsp;&nbsp;
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="header2">
+                <div class="headcontainer">
+                    <img src="ytulogo.png" height="100px">
+                </div>
+                
+            </div>
+            <div class="navbar">
+                <div class="navcontainer">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT YTU</a></li>
+                        <li><a href="#">ADMISSION</a></li>  
+                        <li><a href="#">DEPARTMENT</a> </li>
+                        <li><a href="#">ACADEMICS</a></li>
+                        <li><a href="#">NEW AND EVENTS</a></li>
+                        <li><a href="#">RESEARCH</a></li>
+                        <li><a href="#">CONFERENCES</a></li>
+                        <li><a href="#">INTERNATIONAL AFFAIRS</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+                <div class="backgroundimage"></div>
+
+                <div class="text">
+                    <div class="left">
+                        <img src="leaf.jpg" width="250px">
+                        
+                    </div>
+                    <div class="right">
+                        
+                           <h3>Swal Daw Leaf</h3>
+                            
+                            <p>Swal Daw Leaf (Bauhinia variegata's leaf) is a representation of YTU and has a meaningful fact behind it.
+                            </p>
+                            <button class="btn">Read More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>
+                    </div>
+                </div>
+                 <div class="body">
+                    
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Our Objectives</h3>
+                                <p>It is envisaged that YTU will become a highly-prestigious technological 
+                                    centre of excellence in teaching and research with a strong commitment to systematically educate and train</p>
+                                    <button class="btn">Read More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>
+                            </div>
+                            <div class="card">
+                                <h3>Our Missions</h3>
+                                <p>To educate and train students systematically to become engineers, 
+                                    specialists and researchers who can effectively contribute to the building of a modern developed nation</p>
+                                    <button class="btn">Read More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>
+                            </div>
+                            <div class="card">
+                                <h3>Programs</h3>
+                                <p>when an unknown printer took a galley of type and scrambled it to make a type 
+                                    specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+                                    <button class="btn">Read More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>
+                            </div>
+                            
+                                
+                            
+                        </div>
+                        <div class="message">
+                            <img src="rector.jpg" width="350px" height="250px">
+                            <div class="message2">
+                                <h2 style="color: orange;">Rector's Message</h2>
+                                <p>Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are
+
+                                    currently about 2000 students seeking knowledge and experiences at YTU.VISION It is...
+                                    </p>
+                                    <button class="btn" >Read More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>
+                            </div>
+                            <div class="event">
+                                <h3 style="text-align: center; color: orange;">YTU EVENTS</h3>
+                                <div class="eventimg">
+                                    <img src="img1.png" width="200px" height="100px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <img src="img2.jpg" width="200px" height="100px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <img src="img3.jpg" width="200px" height="100px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <img src="img4.jpg" width="200px" height="100px">
+                                </div>
+                                <div class="btn2">
+                                    <button class="btn" >More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>  
+                                </div>
+                                <div class="welcome">
+                                    <h2 style="color: orange; text-align: center; font-size: 30px;">WELCOME TO YTU</h2>
+                                    <p style="font-size: medium; text-align: justify;">
+                                        Yangon Technological University is one of the best universities in Myanmar and 
+                                        only allows admissions of students who gained high marks from the matriculation 
+                                        examination. A student's majorized engineering field is also decided by the marks 
+                                         earned through the matriculation examination. Currently, YTU possesses 12 
+                                         Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 
+                                         Laboratories.There are currently about 2000 students seeking knowledge and 
+                                         experiences at YTU. Find out more about the history of YTU at...
+
+                                    </p>
+                                    <button class="btn">Read More<i class="fa fa-arrow-circle-right" style="font-size:12px"></i></button>  
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="scimg">
+                            <div class="transcon">
+                                <div class="trans1">
+                                    <p style="text-align: center; color: darkorange;">25</p><p class="fontstyle">DEPARTMENT PUBLISHED</p>
+                                </div>
+                                <div class="trans2">
+                                    <p style="text-align: center; color: darkorange;">1000</p><p class="fontstyle">PROFESSIONAL LECTURE</p>
+                                </div>
+                                <div class="trans3">
+                                    <p style="text-align: center; color: darkorange;">2000</p><p class="fontstyle">SUDENT ENROLLMENT</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <h2 style="color: orange; text-align: center;">Update News</h2>   
+                        <div class="update">
+                            <div class="row1">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img1.png" width="250px" height="200px">
+                                        <figcaption>Ministry of Education Yangon Technological...</figcaption>
+                                    </figure>
+    
+                                </a>
+                                <a href="#">
+                                    <figure>
+                                        <img src="img2.jpg" width="250px" height="200px">
+                                        <figcaption>Myanmar first Diploma Programme in...</figcaption>
+                                    </figure>
+                                </a>
+                                 <a href="#">
+                                    <figure>
+                                        <img src="img5.jpg" width="250px" height="200px">
+                                        <figcaption>7th WWSPZP</figcaption>
+                                    </figure>
+                                 </a>   
+                               
+                            </div>
+                            <div class="row1">
+                                <a href="#">
+                                    <figure>
+                                        <img src="leaf.jpg" width="250px" height="200px">
+                                        <figcaption>Swal Daw Leaf</figcaption>
+                                    </figure>
+    
+                                </a>
+                                <a href="#">
+                                    <figure>
+                                        <img src="img6.jpg" width="250px" height="200px">
+                                        <figcaption>Rector's Collaborative Visit to University</figcaption>
+                                    </figure>
+                                </a>
+                                 <a href="#">
+                                    <figure>
+                                        <img src="img4.jpg" width="250px" height="200px">
+                                        <figcaption>Training of IOT and Environmental</figcaption>
+                                    </figure>
+                                 </a>   
+                               
+                            </div>
+                        </div>                      
+                    </div>
+                    
+                 </div>
+                 
+            
+            <div class="footer">
+                <div class="footcontainer">
+                    <div class="col1">
+                        <h2>ABOUTYTU</h2>
+                        <p style="text-align: justify; font-size: medium;">
+                            The present Yangon Technological University (Y.T.U) began as the Department of Engineering 
+                            in 1923 under the Rangoon (Yangon) University. The Engineering Department was situated 
+                            downtown, on the Bogyoke Aung San street. B.Sc. (Engineering) program in Civil Engineering
+                             began in 1924.<br>&copy; Yangon Technological University - 2020</p>
+                    </div>
+                    <div class="col2">
+                        <h2>OUR LINKS</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">Civil Engineering</a></li>
+                            <li><a href="#">Mechanical Engineering</a></li>
+                            <li><a href="#">Mining Engineering</a></li>
+                            <li><a href="#">Alumini</a></li>
+                        </ul>
+                    </div>
+                    <div class="col3">
+                        <h2>Recent Posts</h2>
+                        <div class="recent">
+                            <div class="rowimg2">
+                                <div class="evt2"><img src="img7.jpg" width="40px"></div>
+                                <div class="evt21"><a href="#">Events Two</a><p style="font-size: 11px;">November 18, 2019</p></div>
+                            </div>
+                            <div class="rowimg1">
+                                <div class="evt1"><img src="img5.jpg" width="40px"></div>
+                                <div class="evt11" style="line-height: 10px;"><a href="#">Events One</a><p style="font-size: 11px;">November 18, 2019</p></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
