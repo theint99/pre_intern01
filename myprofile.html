@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile</title>
+    </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+           
+            width: 100%;
+         }
+         .body{
+             width: 100%;
+             font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .myphoto{
+            margin-top: 30px;
+            margin-left: 20px;
+            display: flex;
+        }
+        .pp{
+            border-radius: 50%;
+        }
+        .name{
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 10px;
+
+        }
+        figcaption{
+            text-align: center;
+            font-size: 18px;
+            
+        }
+        .name p{
+            text-align: justify;
+            font-size: small;
+           
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: auto;
+            grid-gap: 1em;
+        }
+        .card{
+            border: 2px solid yellow;
+            border-radius: 4px;
+            padding: 10px;
+        } 
+        .footer{
+            width: 100%;
+            background-color: skyblue;
+        }
+        .contact{
+         text-align: center;
+        }
+        a{
+            color: black;
+        }
+        </style>
+    <body>
+        <div class="container">
+            <div class="body">
+                <div class="myphoto">
+                    <figure>
+                        <img src="mt.jpg" width="200px" height="200px" class="pp">
+                        <figcaption>Hello,<img src="wave.png" width="20px" height="20px"></figcaption>
+                    </figure>
+                    <div class="name">
+                        <h2>About Me</h2>
+                        <p>I am <span style="font-style: italic;font-weight: bold;">'Theint Shwe Sin Myo'</span>.
+                            Most people call me Ma Theint :) &nbsp;I'm fourth year student from Computer University (Magway).
+                            I'm attending at 4CS Section(A). I'm interested in HTML, JavaScript, PHP and Android. I like to do
+                            teamwork.  So, I'm a person who is avid about fulfilling my role as a leader or a member.
+                         </p>
+                    </div>
+                    
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Education </h3>
+                        <ul>
+                            <li>Present: University of Computer Studies Magway</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Personal Achievements</h3>
+                        <ul>
+                            <li>Microsoft Office Specialist(MOS) for Office PowerPoint 2013</li>
+                            <li>The Second ICT Project Competition & Show, 2019(Second Prize)</li>
+                            <li>Yetagun Youth Program(Season IV)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li>The Legend of Myathalon Pagoda(HTML)</li>
+                            <li>Hospital Management System(DBMS)</li>
+                            <li>Admission Form of Private School(C#)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        
+                        <i class="fa fa-phone"></i>&nbsp;&nbsp;<a href="tel:+959771601316" style="text-decoration: none;">09771601316</a><br>
+                            
+                            
+                        <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="email:theintshwesinmyomgy3199@gmail.com" style="text-decoration: none;">
+                             theintshwesinmyomgy3199@gmail.com</a><br>
+                        
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.facebook.com/mi.theint.9693/" style="text-decoration: none;">
+                        Theint Shwe Sin Myo</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>
