@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task1</title>
+        <script>
+            document.addEventListener('DOMContentLoaded',()=>{
+                document.querySelector('.select').onchange=function(){
+                    document.querySelector('.title').style.color=this.value;
+                }
+
+            
+            });
+        </script>
+    </head>
+    <body>
+        <h1 class="title">Hello! Welcome to Our PreIntern Group.</h1>
+        <select class="select">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        
+    </body>
+</html>
