@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task2</title>
+        <script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+        <script type='text/javascript'>
+            
+
+             function enable() {
+                document.getElementById("submitBtn").disabled = false;
+            }
+            
+            document.addEventListener('DOMContentLoaded', function() {
+
+                document.querySelector('#todo-list').onsubmit =function() {
+
+                        const li = document.createElement('li');
+                        const value = document.querySelector('#searchInput').value;
+                            if(value!="" ){                                      
+                                li.innerHTML=value;
+                                document.querySelector("#list").appendChild(li);
+                                document.querySelector('#searchInput').value = '';
+                                return false;                   
+                            }
+                                                            
+                };
+            });
+        </script>
+        <title>Assignment for Javascript -Task2</title>
+    </head>
+    <body>
+        <h1>To Do List</h1>
+        <ul id="list">
+        </ul>      
+        <form method='post'id="todo-list">
+            <input type='text' name='searchQuery' id='searchInput' onclick="enable()" />
+            <button name='submit' id='submitBtn' class='enableOnInput' disabled='disabled'>Submit</button>
+        </form>
+        
+    </body>
+</html>
